@@ -3,7 +3,6 @@
 	<title>routeaccess @ GitHub</title>
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/component.css">
 	<script type="text/javascript" src="js/jquery210.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<style type="text/css">
@@ -13,66 +12,79 @@
 <body>
 <div id="wrap" class="container-fluid well">
 	<div class="row">
-		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-		 	 <div class="container-fluid">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		 	<div class="container-fluid">
 		    <!-- Brand and toggle get grouped for better mobile display -->
 		    	<div class="navbar-header">
-		      		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		        		<span class="sr-only">Toggle navigation</span>
-		        		<span class="icon-bar"></span>
-		        		<span class="icon-bar"></span>
-		        		<span class="icon-bar"></span>
-		      		</button>
-		      		<a class="navbar-brand" href="#">Nevin Valsaraj</a>
+		    	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+		    	  	    <span class="icon-bar"></span>
+		    	    	<span class="icon-bar"></span>
+		    	      	<span class="icon-bar"></span>
+		    	    </button>
+		    	    <a class="navbar-brand" href="#">Nevin Valsaraj</a>
 		    	</div>
-
-		    	<!-- Collect the nav links, forms, and other content for toggling -->
-		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      		<ul class="nav navbar-nav">
-		        		<li class="active"><a href="#">Home</a></li>
-		        		<li><a href="#">Link</a></li>
-		        		<li class="dropdown">
-		          			<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-	          				<ul class="dropdown-menu">
-	            				<li><a href="#">Action</a></li>
-	            				<li><a href="#">Another action</a></li>
-	            				<li><a href="#">Something else here</a></li>
-	            				<li class="divider"></li>
-	            				<li><a href="#">Separated link</a></li>
-	            				<li class="divider"></li>
-	            				<li><a href="#">One more separated link</a></li>
-	          				</ul>
-	        			</li>
-		      		</ul>
-				    <ul class="nav navbar-nav navbar-right">
-		        		<li><a href="https://facebook.com/nevin.valsaraj"><i class="fa fa-facebook fa-2x"></i></a></li>
-		        		<li><a href="https://twitter.com/routeaccess"><i class="fa fa-twitter fa-2x"></i></a></li>
-		        		<li><a href="https://github.com/routeaccess"><i class="fa fa-github fa-2x"></i></a></li>
-		        		<li class="dropdown">
-			          		<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Links<b class="caret"></b></a>
-			          		<ul class="dropdown-menu">
-			            		<li><a href="#">Department Webpage</a></li>
-			            		<li><a href="#">Another action</a></li>
-			            		<li><a href="#">Something else here</a></li>
-			            		<li class="divider"></li>
-			            		<li><a href="#">Separated link</a></li>
-			          		</ul>
-		        		</li>
-		      		</ul>
-		    	</div><!-- /.navbar-collapse -->
+		    	<div class="navbar-collapse collapse navbar-responsive-collapse">
+		    	    <ul class="nav navbar-nav">
+		    		    <li class="active"><a href="#">Home</a></li>
+		    	    	<li><a href="#">Link</a></li>
+		    	      	<li class="dropdown">
+		    	        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+		    	        	<ul class="dropdown-menu">
+		    	          		<li><a href="#">Action</a></li>
+		    	          		<li><a href="#">Another action</a></li>
+		    	          		<li><a href="#">Something else here</a></li>
+		    	          		<li class="divider"></li>
+		    	          		<li class="dropdown-header">Dropdown header</li>
+		    	          		<li><a href="#">Separated link</a></li>
+		    	          		<li><a href="#">One more separated link</a></li>
+		    	        	</ul>
+		    	      	</li>
+		    	    </ul>
+		    	    <form class="navbar-form navbar-left">
+		    	    	<input type="text" class="form-control col-lg-8" placeholder="Search">
+		    	    </form>
+		    	    <ul class="nav navbar-nav navbar-right">
+		    	      	<li><a href="#">Link</a></li>
+		    	      	<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+		    	      	<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+		    	      	<li><a href="#"><i class="fa fa-github fa-2x"></i></a></li>
+		    	      	<li class="dropdown">
+		    	        	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Other Links <b class="caret"></b></a>
+		    	        	<ul class="dropdown-menu">
+		    	          		<li><a href="#">Action</a></li>
+		    	          		<li><a href="#">Another action</a></li>
+		    	          		<li><a href="#">Something else here</a></li>
+		    	          		<li class="divider"></li>
+		    	          		<li><a href="#">Separated link</a></li>
+		    	        	</ul>
+	    	      		</li>
+		    	    </ul>
+		    	</div>
 		  	</div><!-- /.container-fluid -->
 		</nav>
 	</div>
 	<div class="row">
 		<div class="col-md-3">
-			<ul class="nav nav-pills nav-stacked" style="position: fixed; width: 20%;">
-			    <li class="active"><a href="#">Lorem</a></li>
-			    <li><a href="#">Ipsum</a></li>
+			<ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
+			  	<li class="active"><a href="#">Home</a></li>
+			  	<li><a href="#">Profile</a></li>
+			  	<li class="disabled"><a href="#">Disabled</a></li>
+			  	<li class="dropdown">
+			    	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown <span class="caret"></span></a>
+		    		<ul class="dropdown-menu">
+			      		<li><a href="#">Action</a></li>
+			      		<li><a href="#">Another action</a></li>
+			      		<li><a href="#">Something else here</a></li>
+			      		<li class="divider"></li>
+			      		<li><a href="#">Separated link</a></li>
+			    	</ul>
+			  	</li>
 			</ul>
 		</div>
 		<div class="col-md-6 well">
 			<p>
-				<h3>Under construction, so please be sure to check in later on !</h3>
+				<h3>Under construction! <br>
+				Please check in later on.</h3>
 			</p>
 		</div>
 		<div class="col-md-3 well">
