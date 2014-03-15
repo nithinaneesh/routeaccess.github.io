@@ -8,7 +8,7 @@
     <script type="text/javascript" src="js/jquery210.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <style type="text/css">
-        body{ padding-top: 70px }
+        body{ padding-top: 90px }
     </style>
 </head>
 <body>
@@ -27,10 +27,10 @@
                 </div>
                 <div class="navbar-collapse collapse navbar-responsive-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
-                        <li><a href="#">Link</a></li>
+                        <li class="active"><a href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                        <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-th-list"></i> Dropdown <b class="caret"></b></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Action</a></li>
                                 <li><a href="#">Another action</a></li>
@@ -64,7 +64,7 @@
                 <li><a href="#profile"><i class="fa fa-user fa-2x"></i>  Profile</a></li>
                 <li class="disabled"><a href="#">Disabled</a></li>
                 <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Dropdown<span class="caret"></span></a>
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-th-list fa-2x"></i>  Dropdown<span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
@@ -76,7 +76,16 @@
             </ul>
         </div>
         <div class="col-md-6">
-            <div id="home" class="well">
+            <div class="alert alert-dismissable alert-danger">
+              <button type="button" class="close" data-dismiss="alert"><i class="fa fa-trash-o"></i></button>
+              <strong>Oh snap! We're not fully set up yet.</strong> Check in on us later.
+            </div>
+
+            <div id="home" class="jumbotron">
+              <h1>Hello!</h1>
+              <p> Howdy! Thanks for dropping by, weary internet traveller. </p>
+            </div>
+            <div id="profile" class="well">
                 <p>
                     <h3>Under construction! <br>
                     Please check in later on.</h3>
@@ -87,7 +96,6 @@
                     Some random text here
                 </p>
             </div>
-            <div id="profile" class="well"></div>
         </div>
         <div class="col-md-3">
             <a class="twitter-timeline" href="https://twitter.com/routeaccess" data-widget-id="444384031832961024">Tweets by @routeaccess</a>
@@ -97,9 +105,9 @@
     <div class="row">
         <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
             <div class="container-fluid">
-                <span class="navbar-text ">&copy; 2014 routeaccess&trade;</span>
-                <a href="http://getbootstrap.com/" class="btn btn-danger navbar-btn pull-right">Get Bootstrap</a>
-                <p class="navbar-text pull-right">Developed with Bootstrap 3</p>
+                <span class="navbar-text">&copy; 2014 routeaccess&trade;</span>
+                <a href="http://getbootstrap.com/" class="btn btn-success navbar-btn pull-right">Get Bootstrap  <i class="fa fa-cloud-download"></i></a>
+                <p class="navbar-text pull-right">Developed with <i class="fa fa-heart"></i> , <i class="fa fa-coffee"></i> and Bootstrap 3</p>
             </div>
         </nav>
     </div>
